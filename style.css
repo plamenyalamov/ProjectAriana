@@ -1,0 +1,139 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  margin: 40px;
+}
+/* Стилове за хедъра */
+header {
+  background-color: #fff; /* Бял фон */
+  color: #333; /* Тъмен текст */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .header-container h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #333; /* Цветът на текста */
+}
+
+header .header-container p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #777; /* Сив текст за подзаглавие */
+}
+
+
+h1 {
+  color: #b20084;
+  text-align: center;
+}
+
+p, ul, ol {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a, a {
+  text-decoration: none;
+  color: #b20084;
+  font-weight: bold;
+}
+
+nav ul li a:hover, a:hover {
+  color: #e75480;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Лека сянка */
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Лека сянка */
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05); /* Приплъзване на изображението при ховър */
+}
+/* Контейнерът за албумите */
+.albums {
+  display: flex; /* Прави контейнера гъвкав */
+  justify-content: space-around; /* Поставя елементите с равно разстояние */
+  align-items: center; /* Центрира елементите по вертикала */
+  flex-wrap: wrap; /* Позволява пренасочване на елементите, ако е необходимо */
+  gap: 20px; /* Разстояние между елементите */
+  padding: 20px 0; /* Отстояние отгоре и отдолу на контейнера */
+}
+
+/* Стил за всеки отделен албум */
+/*.album {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.album:hover {
+  transform: scale(1.1); /* Леко увеличение при задържане на курсора */
+/*}*/
+
+/* Снимките на албумите */
+/*.album img {
+  border-radius: 10px; /* Заобляне на ъглите */
+  /*width: 150px; /* Ширина на изображението */
+  /*height: auto;
+}*/
+
