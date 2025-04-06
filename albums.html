@@ -33,7 +33,7 @@
 <body> 
 <header>
   <div class="header-container">
-  <img src="img/logo.png" alt="Ariana Grande" style="display: block; margin: 20px auto; border-radius: 20px; max-width: 300px;">
+  <img src="img/logo2.png" alt="Ariana Grande" style="display: block; margin: 20px auto; border-radius: 20px; max-width: 300px;">
   </div>
 
 
@@ -242,7 +242,29 @@ Sweetener (2018)</div>
   </ol>
    </div>
   -->
+<button id="scrollToTop" title="Go to top">
+  ↑
+</button>
 
+<script>
+  // Получава бутона
+  var mybutton = document.getElementById("scrollToTop");
+
+  // Когато потребителят скролира надолу 20px, бутонът става видим
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // Когато потребителят кликне върху бутона, се премества в най-горната част
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0; // За Safari
+    document.documentElement.scrollTop = 0; // За Chrome, Firefox, IE и Opera
+  };
+</script>
 <script src="script.js"></script>
 
 </body>	

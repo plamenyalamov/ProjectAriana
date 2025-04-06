@@ -118,6 +118,61 @@ h2 {
   gap: 20px; /* Разстояние между елементите */
   padding: 20px 0; /* Отстояние отгоре и отдолу на контейнера */
 }
+.tours {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tour {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dates {
+  display: none;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #999;
+  border-radius: 0 0 10px 10px;
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white; /* бял фон */
+  color: #FFB6C1; /* светло розов цвят за стрелката */
+  border: none;
+  border-radius: 50%; /* Пълен кръг */
+  padding: 15px;
+  font-size: 24px; /* Увеличаване на размера на стрелката */
+  cursor: pointer;
+  display: flex; /* Използваме flex за центриране */
+  justify-content: center; /* Центриране на стрелката по хоризонтала */
+  align-items: center; /* Центриране на стрелката по вертикала */
+  width: 60px; /* размер на кръга */
+  height: 60px; /* височина на кръга */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+#scrollToTop:hover {
+  background-color: #f1f1f1; /* светло сив цвят при hover */
+}
+
+#scrollToTop:focus {
+  outline: none;
+}
+
+
+
+
 
 /* Стил за всеки отделен албум */
 /*.album {

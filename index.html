@@ -25,6 +25,10 @@
 </nav>
 </header>
 <h1>Добре дошли в The Grande Experience!</h1>
+<p>
+"The Grande Experience" е интерактивен уебсайт, посветен на Ариана Гранде. Проектът представя нейната биография, дискография, концерти, участие във филма Wicked и нейната лимитирана Swarovski колекция. Сайтът включва галерия, динамични менюта с информация за албумите и песни с директни връзки към Spotify. Дизайнът е модерен, с визуални ефекти и приятна навигация, насочена към феновете и любителите на поп музиката.
+</p>
+<h1> За нея</h1>
   <p>Ariana Grande е американска певица, актриса и бизнес дама, родена на 26 юни 1993 г. в Бока Ратон, Флорида. Известна е с мощния си вокален диапазон и уникален стил. Кариерата ѝ започва в телевизията, а по-късно се утвърждава като една от най-популярните поп изпълнителки в света.</p>
 
   <nav>
@@ -65,7 +69,29 @@
         </ul>
     </div>
 </div>
+<button id="scrollToTop" title="Go to top">
+  ↑
+</button>
 
+<script>
+  // Получава бутона
+  var mybutton = document.getElementById("scrollToTop");
+
+  // Когато потребителят скролира надолу 20px, бутонът става видим
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // Когато потребителят кликне върху бутона, се премества в най-горната част
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0; // За Safari
+    document.documentElement.scrollTop = 0; // За Chrome, Firefox, IE и Opera
+  };
+</script>
 
 
   

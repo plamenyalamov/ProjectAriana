@@ -9,7 +9,7 @@
 <body>
 <header>
   <div class="header-container">
-  <img src="img/logo.png" alt="Ariana Grande" style="display: block; margin: 20px auto; border-radius: 20px; max-width: 300px;">
+  <img src="img/logo2.png" alt="Ariana Grande" style="display: block; margin: 20px auto; border-radius: 20px; max-width: 300px;">
   </div>
 
 
@@ -24,14 +24,79 @@
   </ul>
 </nav>
 
-  <h1>Концерти</h1>
-  <ul>
-    <li>The Honeymoon Tour (2015)</li>
-    <li>Dangerous Woman Tour (2017)</li>
-    <li>Sweetener World Tour (2019)</li>
-    <li>iHeartRadio Music Festival (2020)</li>
-  </ul>
+   <header>
+    <h1>Концертни турнета на Ариана Гранде</h1>
+  </header>
 
-  <a href="index.html">Назад към началната страница</a>
+  <div class="tours">
+    <div class="tour" onclick="toggleDates('honeymoon')">
+      <h2>The Honeymoon Tour (2015)</h2>
+    </div>
+    <div id="honeymoon" class="dates">
+      <ul>
+        <li>25 февруари 2015 – Independence, Missouri</li>
+        <li>8 март 2015 – New York, NY</li>
+        <li>15 април 2015 – Vancouver, Canada</li>
+        <li>16 юни 2015 – Париж, Франция</li>
+        <!-- Добави още дати -->
+      </ul>
+    </div>
+
+    <div class="tour" onclick="toggleDates('dangerouswoman')">
+      <h2>Dangerous Woman Tour (2017)</h2>
+    </div>
+    <div id="dangerouswoman" class="dates">
+      <ul>
+        <li>3 февруари 2017 – Phoenix, Arizona</li>
+        <li>23 февруари 2017 – Madison Square Garden, NYC</li>
+        <li>22 май 2017 – Манчестър, UK</li>
+        <li>5 юни 2017 – Париж, Франция</li>
+        <!-- Добави още дати -->
+      </ul>
+    </div>
+
+    <div class="tour" onclick="toggleDates('sweetener')">
+      <h2>Sweetener World Tour (2019)</h2>
+    </div>
+    <div id="sweetener" class="dates">
+      <ul>
+        <li>18 март 2019 – Albany, NY</li>
+        <li>25 март 2019 – Washington, DC</li>
+        <li>17 август 2019 – Лондон, UK</li>
+        <li>22 декември 2019 – Inglewood, CA</li>
+        <!-- Добави още дати -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleDates(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
+  <button id="scrollToTop" title="Go to top">
+  ↑
+</button>
+
+<script>
+  // Получава бутона
+  var mybutton = document.getElementById("scrollToTop");
+
+  // Когато потребителят скролира надолу 20px, бутонът става видим
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // Когато потребителят кликне върху бутона, се премества в най-горната част
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0; // За Safari
+    document.documentElement.scrollTop = 0; // За Chrome, Firefox, IE и Opera
+  };
+</script>
 </body>
 </html>

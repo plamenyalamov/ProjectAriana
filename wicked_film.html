@@ -5,28 +5,99 @@
    <link rel="icon" type="image/x-icon" href="img/logo.png">
   <title>Филмът Wicked</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+
 <header>
   <div class="header-container">
-  <img src="img/logo.png" alt="Ariana Grande" style="display: block; margin: 20px auto; border-radius: 20px; max-width: 300px;">
+  <img src="img/logo2.png" alt="Ariana Grande" style="display: block; margin: 20px auto; border-radius: 20px; max-width: 300px;">
   </div>
+<style>
+    .wicked-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .wicked-section img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .wicked-section h2 {
+      color: #333;
+    }
+    .wicked-cast {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
+  <nav>
+    <ul>
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="concert.html">Концерти</a></li>
+      <li><a href="wicked_film.html">Филмът Wicked</a></li>
+      <li><a href="albums.html">Албуми</a></li>
+      <li><a href="swarovski.html">Swarovski Колекция</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Начало</a></li>
-	 <li><a href="photos.html">Galery</a></li>
-    <li><a href="concert.html">Концерти</a></li>
-    <li><a href="wicked_film.html">Филмът Wicked</a></li>
-    <li><a href="albums.html">Албуми</a></li>
-    <li><a href="swarovski.html">Swarovski Колекция</a></li>
-  </ul>
-</nav>
+  <header style="text-align:center; padding: 30px 0; background-color: white;">
+    <h1>Филмът Wicked (2024–2025)</h1>
+  </header>
 
-  <h1>Wicked</h1>
-  <p>Ариана Гранде участва в екранизацията на известния мюзикъл "Wicked", където играе ролята на Глинда. Филмът ще бъде пуснат в две части, първата през 2024 г., а втората през 2025 г.</p>
+  <div class="wicked-section">
+    <img src="img/wicked.jpg" alt="Wicked Poster">
 
-  <a href="index.html">Назад към началната страница</a>
+    <h2>За филма</h2>
+    <p><strong>*Wicked*</strong> е филмова адаптация на култовия мюзикъл от Бродуей, базиран на романа от Грегъри Магуайър. Това е историята за случилото се преди *"Магьосникът от Оз"*, показана през погледа на двете вещици — Елфаба и Глинда.</p>
+
+    <p>Ариана Гранде влиза в ролята на <strong>Глинда</strong> — "добрата вещица на Севера", докато Синтия Ериво играе Елфаба — "злата вещица на Запада". Двете преминават през съперничество, приятелство и съдбовни решения в един омагьосан свят.</p>
+
+    <h2>Дата на излизане</h2>
+    <p><strong>Първата част:</strong> 27 ноември 2024<br>
+       <strong>Втората част:</strong> 26 ноември 2025</p>
+
+    <h2 class="wicked-cast">Актьорски състав</h2>
+    <ul>
+      <li>Ариана Гранде – Глинда</li>
+      <li>Синтия Ериво – Елфаба</li>
+      <li>Джонатан Бейли – Фиеро</li>
+      <li>Джеф Голдблум – Магьосникът</li>
+      <li>Мишел Йео – мадам Морибъл</li>
+    </ul>
+
+    <h2>Режисьор</h2>
+    <p><strong>Джон М. Чу</strong> (известен с *In the Heights*, *Crazy Rich Asians*)</p>
+
+    <h2>Очаквания</h2>
+    <p>Очаква се *Wicked* да бъде един от най-големите музикални филми на десетилетието. Поклонниците на Ариана Гранде и Бродуей вече тръпнат в очакване. Филмът съчетава музика, магия, приятелство и борба срещу несправедливостта.</p>
+  </div>
+  <button id="scrollToTop" title="Go to top">
+  ↑
+</button>
+
+<script>
+  // Получава бутона
+  var mybutton = document.getElementById("scrollToTop");
+
+  // Когато потребителят скролира надолу 20px, бутонът става видим
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // Когато потребителят кликне върху бутона, се премества в най-горната част
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0; // За Safari
+    document.documentElement.scrollTop = 0; // За Chrome, Firefox, IE и Opera
+  };
+</script>
 </body>
 </html>
